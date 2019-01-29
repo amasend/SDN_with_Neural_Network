@@ -5,9 +5,13 @@ Ryu python SDN controller with Neural Network integration for predicting anomaly
 This is a part of SDN project at AGH University of Science and Technology.
 The purpose of implementing Deep Neural Network in SDN controller is to predict future bandwidth usage in the network and estimate confidence intervals for decision making algorithm (is there anomaly in the network?).
 
-First not yet integrated version is in [SDN_with_Neural_Network.](https://github.com/amasend/SDN_with_Neural_Network/blob/master/SDN_data_preprocessing_simple_NN.ipynb "Title")  
-Version with 30 minutes predictions for entire day is in [Convoluted 2D LSTM Encoder-Decoder model](https://github.com/amasend/SDN_with_Neural_Network/blob/master/Convolution_2D_LSTM_encode_decoder_30_min_prediction.ipynb "Title")  
+Neural network model (predict 60s traffic based on 600s sample) [LSTM_SDN_seconds_bayesian_60s](https://github.com/amasend/SDN_with_Neural_Network/blob/master/LSTM_models_training_jupyter/LSTM_SDN_seconds_bayesian_60s.ipynb "Title")  
+Neural Network model (predict 30min traffic based on 5h sample) [LSTM_SDN_dropout_wd_30min_sigma](https://github.com/amasend/SDN_with_Neural_Network/blob/master/LSTM_models_training_jupyter/LSTM_SDN_dropout_wd_30min_sigma.ipynb "Title")  
 The source for the model is taken from: [MachineLearningMastery](https://machinelearningmastery.com/how-to-develop-lstm-models-for-multi-step-time-series-forecasting-of-household-power-consumption/ "Title")  
+Related work (confidence intervals in Neural Networks: [uncertainty-sense](http://www.cs.ox.ac.uk/people/yarin.gal/website/blog_3d801aa532c1ce.html#uncertainty-sense "Title")  
+Related work (confidence intervals in Neural Networks: [Dropout as a Bayesian Approximation](https://arxiv.org/pdf/1506.02142.pdf "Title")  
+Integration with SDN controller (change measure interval) [Ryu integration (anomaly detection)](https://github.com/amasend/SDN_with_Neural_Network/blob/master/SDN_Integration/SDN_60s_and_30min.ipynb "Title")  
+Related document about time-series anomaly detection [Anomaly detection (source)](https://anomaly.io/anomaly-detection-normal-distribution/"Title")
 
 ***Environment***  
 Project consists of:

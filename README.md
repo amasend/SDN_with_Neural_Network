@@ -1,5 +1,5 @@
 # SDN_with_Neural_Network
-Ryu python SDN controller with Neural Network integration for predicting anomaly in computer network.
+Ryu python SDN controller with Neural Network integration for predicting anomaly in a computer network traffic.
 
 **Description**  
 This is a part of SDN project at AGH University of Science and Technology.
